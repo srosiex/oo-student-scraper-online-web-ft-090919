@@ -2,10 +2,12 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-class Scraper
-
+class Scrapers
+  
+def scraping
 doc = Nokogiri::HTML(open(https://www.goodreads.com/new_releases))
 doc.css("div.mainContentContainer").text
 binding.pry
+end
 
 end
