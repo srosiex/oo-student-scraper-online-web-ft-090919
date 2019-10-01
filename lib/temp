@@ -9,5 +9,6 @@ doc = Nokogiri::HTML(open(https://www.goodreads.com/new_releases))
 doc.css("div.mainContentContainer").text
 binding.pry
 end
+end
 
 end
