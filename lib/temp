@@ -3,7 +3,7 @@ require 'open-uri'
 require 'pry'
 
 class Scrapers
-  
+
 def scraping
 doc = Nokogiri::HTML(open(https://www.goodreads.com/new_releases))
 doc.css("div.mainContentContainer").text
